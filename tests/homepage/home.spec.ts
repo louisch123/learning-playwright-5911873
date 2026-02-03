@@ -12,7 +12,7 @@ test.describe("Home page with no auth", () => {
     });
   });
 
-  test("check sign in", async ({ page }) => {
+  test("check sign in",{tag: "@first"}, async ({ page }) => {
     await expect(page.getByTestId("nav-sign-in")).toHaveText("Sign in");
   });
 
